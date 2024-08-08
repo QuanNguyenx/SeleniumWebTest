@@ -31,6 +31,7 @@ import java.util.Date;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+/*
     public static void main(String[] args) {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
@@ -95,7 +96,7 @@ public class Main {
             ((JavascriptExecutor) driver).executeScript("arguments[0].click();", box);
 
             By byMethod = By.className("MuiFormControlLabel-root");
-            System.out.println("2 - " + (new Date()).toString());
+//            System.out.println("2 - " + (new Date()).toString());
             waitElementPresent(driver, byMethod, 2);
 
             WebElement checkbox = driver.findElement(By.className("MuiFormControlLabel-root"));
@@ -109,23 +110,23 @@ public class Main {
             WebElement cameraCheckbox = driver.findElement(By.xpath("(//div[@role='button'])[3]"));
 
             cameraCheckbox.click();
-            System.out.println("3 - " + (new Date()).toString());
+//            System.out.println("3 - " + (new Date()).toString());
 
             By videoByMethod = By.id("666f0a20add011eeab13baf7db86dba7");
-            System.out.println("4 - " + (new Date()).toString());
+//            System.out.println("4 - " + (new Date()).toString());
             waitElementPresent(driver, videoByMethod, 2);
 
-            System.out.println("5 - " + (new Date()).toString());
+//            System.out.println("5 - " + (new Date()).toString());
             WebElement videoElement = driver.findElement(videoByMethod);
 
             String initTimeStr = videoElement.getAttribute("currentTime");
             double initTime = Double.parseDouble(initTimeStr);
             Thread.sleep(5000);
-            System.out.println("6 - " + (new Date()).toString());
+//            System.out.println("6 - " + (new Date()).toString());
 
             String currTimeStr = videoElement.getAttribute("currentTime");
             double currTime = Double.parseDouble(currTimeStr);
-            System.out.println(initTimeStr + " - " + currTimeStr);
+//            System.out.println(initTimeStr + " - " + currTimeStr);
 
             if (currTime > initTime) {
                 System.out.println("The video is playing.");
@@ -208,5 +209,5 @@ public class Main {
         return;
 
     }
-
+*/
 }
